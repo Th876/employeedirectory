@@ -9,17 +9,18 @@ return (
 {employees.map((employee) => {
     return (
         <div className="flow-root" key={employee.id}>
-        <ul role="list" className="bg-white p-2 border-b-2 border-gray-100">
+            <Link to={`/employees/${employee.id}`}>
+        <ul className="bg-white p-2 border-b-2 border-gray-100">
             <li className="py-3 sm:py-4">
-                {/* wrap below in a dynamic link */}
+                
                 <div className="flex items-center space-x-4">
                     <div className="flex-shrink-0">
                         <img className="w-20 h-auto rounded-full" src={employee.image} alt={employee.name}/>
                     </div>
 
                     <div className="flex-1 min-w-0">
-                        <p className="text-sm font-medium text-gray-900 truncate dark:text-white"><Link to={`/employees/${employee.id}`}>
-                            {employee.name}</Link>
+                        <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
+                            {employee.name}
                         </p>
                         <p className="text-sm text-gray-500 truncate dark:text-gray-400">
                             {employee.position}
@@ -28,6 +29,7 @@ return (
                 </div>
             </li>
         </ul>
+        </Link>
    </div>
     )
 })

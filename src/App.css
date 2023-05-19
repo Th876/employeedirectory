@@ -22,7 +22,62 @@
   margin-left: auto;
   margin-right: auto;
   cursor: pointer;
+  position: relative;
 }
+
+.border-gray-100 {
+  width: 390px;
+}
+
 .employee-page {
   margin-bottom: 30px;
+}
+
+.svg1 {
+  color: gray;
+  position: absolute;
+  margin-left: auto;
+  right: 50px;
+  top: 185px;
+}
+
+.svg2 {
+  color: gray;
+  position: absolute;
+  margin-left: auto;
+  right: 50px;
+  top: 255px;
+}
+
+.svg3 {
+  color: gray;
+  position: absolute;
+  margin-left: auto;
+  right: 50px;
+  top: 330px;
+}
+
+.svg4 {
+  color: gray;
+  position: absolute;
+  margin-left: auto;
+  right: 50px;
+  top: 400px;
+}
+
+.employee-container-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.employee-container1 {
+  margin-top: 15px;
+  margin-left: -610px;
+  padding-right: 20px;
+}
+
+.svg5 {
+  margin-left: 590px;
+  color: gray;
 }
